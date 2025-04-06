@@ -17,8 +17,19 @@
 
 	<header>
 		<nav id="nav-bar">
-			<div id="logo">
-				<a href=""><img src="/wp-content/themes/planty/images/logo.png" alt="Planty boisson énergisante"></a>
+			<div id="logo" role="navigation">
+				<?php
+				if (has_custom_logo()) {
+					the_custom_logo();
+				} else {
+					// Optionnel : Afficher le nom du site si aucun logo n'est défini
+					?>
+					<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+						<?php bloginfo('name'); ?>
+					</a>
+					<?php
+				}
+				?>
 
 			</div>
 

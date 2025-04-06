@@ -12,6 +12,7 @@ Version: 1.2.19
 
 :root {
   --main-color: #ece2da;
+  --backroud-section:#E8E6E1,
   --secondry-color: #e0b9b4;
   --tertiary-color: #e3d9d0;
   --soft-coral: #dc9f96;
@@ -40,7 +41,6 @@ Version: 1.2.19
 #nav-bar {
   background-color: var(--color-white);
   display: flex;
-
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -76,23 +76,19 @@ Version: 1.2.19
   margin: 0 16px;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  height: 65px;
-  background-color: var(--color-white);
-  font-family: var(--police);
-  font-size: 16px;
-  font-weight: 400;
+.boisson-can {
+ padding-bottom: 24px;
+ padding-top: 32px;
+  background-color:rgb(237, 143, 12, 0.3);
+  border-radius: 0% 0% 25% 35% / 8% 8% 8% 8% !important;
 }
+
 .container-can {
   position: relative;
   width: 100%;
   display: flex;
   flex-direction: row;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -123,3 +119,33 @@ footer {
   position: relative;
   z-index: 2;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 65px;
+  background-color: var(--color-white);
+  font-family: var(--police);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* @media screen and (min-width: 0px) and (max-width: 380px) {
+  #logo {
+    margin: 10px auto 10px auto;
+    width: 120px;
+    height: auto;
+  }
+
+  #nav-bar {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 25px 5px;
+    padding: 0;
+  }
+} */
