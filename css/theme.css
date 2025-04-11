@@ -34,8 +34,8 @@ Version: 1.2.19
 .page-id-263 {
   background-color: var(--main-color);
 }
-.page-id-269 {
-  background-color: var(--accent-color);
+.page-id-269 .content-bg {
+  background-color: var(--accent-color) !important;
 }
 
 #nav-bar {
@@ -74,6 +74,15 @@ Version: 1.2.19
 
 #menu li {
   margin: 0 16px;
+}
+#menu li a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+#menu li a:hover {
+  color: var(--accent-color);
+  background-color: var(--secondry-color);
+  padding: 32px 4px;
 }
 
 .boisson-can {
@@ -136,6 +145,17 @@ footer {
   font-family: var(--police);
   font-size: 16px;
   font-weight: 400;
+}
+/* .bg-fraise  */
+
+.container-commander {
+  background-color: #c02e44;
+}
+.container-commander .ff-t-column-1 {
+  background-color: pink;
+}
+.container-commander .ff-t-column-2 {
+  background-color: blueviolet;
 }
 
 /* @media screen and (min-width: 0px) and (max-width: 320px) {
