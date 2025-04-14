@@ -32,7 +32,7 @@ Version: 1.2.19
   background-color: var(--color-white);
 }
 .page-id-263 {
-  background-color: var(--main-color);
+  background-color: rgb(220, 159, 150, 0.4);
 }
 .page-id-269 .content-bg {
   background-color: var(--accent-color) !important;
@@ -99,6 +99,7 @@ Version: 1.2.19
 }
 .nous-contacter {
   background-color: rgb(220, 159, 150, 0.4);
+  margin: auto;
 }
 
 .container-can {
@@ -151,6 +152,11 @@ footer {
   font-family: var(--police);
   font-size: 16px;
   font-weight: 400;
+}
+.leaf-nous-contacter {
+  background-color: #c02e44;
+  margin-top: -40px;
+  z-index: -1 !important;
 }
 /* .bg-fraise  */
 
@@ -216,13 +222,35 @@ footer {
     z-index: 2;
   }
   .image-fruit {
-    margin-left: 50px;
-    width: 80%;
+    display: block;
+    border-radius: none !important;
+    max-width: 320px !important;
+    margin: auto;
   }
 
   .image-personne {
-    display: inline-block;
-    max-width: 60%;
-    text-align: center;
+    display: block;
+    max-width: 60% !important;
+    text-align: center !important;
+    margin: auto !important;
+  }
+  .leaf1 {
+    display: none !important;
+  }
+
+  .leaf-equipe {
+    display: none !important;
+  }
+  .nous-rencontrer-h1 {
+    display: block;
+    max-width: 80%;
+    text-align: center !important;
+    margin: auto !important;
+  }
+  .form-nous-contacter {
+    display: block;
+    max-width: 80%;
+    text-align: center !important;
+    margin: auto !important;
   }
 }
