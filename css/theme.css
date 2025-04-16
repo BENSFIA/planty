@@ -181,6 +181,12 @@ footer {
   position: relative;
   z-index: 1;
 }
+
+.form-commander,
+.compteur-commander {
+  max-width: 100%;
+  height: auto;
+}
 .commander-fraise::after {
   position: absolute;
   bottom: -20px;
@@ -365,6 +371,29 @@ footer {
     display: block;
     max-width: 80%;
 
+    margin: auto !important;
+  }
+  .commander-pamplemousse,
+  .commander-framboise,
+  .commander-citron,
+  .commander-fraise {
+    display: block;
+    min-width: 100%;
+    margin-left: 24px;
+    margin-top: 24px;
+  }
+  .form-commander {
+    display: block;
+    max-width: 90%;
+    text-align: center !important;
+    margin: auto !important;
+  }
+  .compteur-commander {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 84px;
+
+    text-align: center !important;
     margin: auto !important;
   }
 }
