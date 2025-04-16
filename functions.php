@@ -25,40 +25,7 @@ function mon_theme_register_nav_menu()
 }
 add_action('after_setup_theme', 'mon_theme_register_nav_menu');
 
-// function permettant d'afficher le compteur de commande
 
-// functions.php
-
-function compteur_commande_shortcode()
-{
-  $quantity = isset($_POST['quantity']) ? intval($_POST['quantity']) : 0;
-
-  if (isset($_POST['increment'])) {
-    $quantity++;
-  }
-  if (isset($_POST['decrement'])) {
-    $quantity = max(0, $quantity - 1); // S'assurer que la quantité n'est jamais inférieure à 0
-  }
-
-  ob_start();
-  ?>
-
-  <form method="post" class="quantity-form">
-    <div class="quantity-single-button"
-      style="display: inline-flex; flex-direction: column; align-items: center; gap: 5px; margin-bottom: 20px;">
-
-      <input type="number" name="quantity" value="<?php echo esc_attr($quantity >= 0 ? $quantity : 0); ?>"
-        style="width: 60px; text-align: center; border: solid 1px #ccc; background-color: #fff; font-size: 20px;">
-
-    </div>
-  </form>
-
-
-
-  <?php
-  return ob_get_clean();
-}
-add_shortcode('compteur_commande', 'compteur_commande_shortcode');
 
 
 ?>

@@ -153,11 +153,96 @@ footer {
   font-size: 16px;
   font-weight: 400;
 }
-.leaf-nous-contacter {
-  background-color: #c02e44;
-  margin-top: -40px;
-  z-index: -1 !important;
+#mentions a {
+  color: black !important;
+  text-decoration: none !important;
 }
+.leaf-nous-contacter {
+  position: relative;
+}
+.leaf-nous-contacter::after {
+  content: " ";
+  position: absolute;
+  bottom: -1px;
+  left: -40px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/Group 16.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.message-nous-contacter {
+  z-index: 1;
+}
+.commander-fraise {
+  position: relative;
+  z-index: 1;
+}
+.commander-fraise::after {
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/fraise Moyenne.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.commander-citron {
+  position: relative;
+  z-index: 1;
+}
+.commander-citron::after {
+  content: " ";
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/citron Moyenne.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.commander-framboise {
+  position: relative;
+  z-index: 1;
+}
+.commander-framboise::after {
+  content: " ";
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/framboise Moyenne.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.commander-pamplemousse {
+  position: relative;
+  z-index: 1;
+}
+.commander-pamplemousse::after {
+  content: " ";
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/pamplemousse Moyenne.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .compteur-commande-f {
   width: 60px;
   margin-left: 32px;
@@ -165,17 +250,17 @@ footer {
 }
 .compteur-commande-p {
   width: 60px;
-  margin-left: 40px;
+  margin-left: 32px;
   padding-right: 2px;
 }
 .compteur-commande-pm {
   width: 60px;
-  margin-left: 48px;
+  margin-left: 32px;
   padding-right: 2px;
 }
 .compteur-commande-c {
   width: 60px;
-  margin-left: 56px;
+  margin-left: 32px;
   padding-right: 2px;
 }
 
@@ -186,6 +271,7 @@ footer {
   gap: 20px;
   margin-bottom: 2em;
   margin-top: 2.5em;
+  color: #ffffff;
 }
 /* .container-commander .ff-t-column-1 {
   background-color: pink;
