@@ -31,8 +31,8 @@ add_action('after_setup_theme', 'mon_theme_support');
 function mon_theme_register_nav_menu()
 {
   register_nav_menus(array(
-    'topbar_menu' => __('Menu Principal (Affiché en haut)', 'votre_theme'),
-    'footer_menu' => __('Menu Pied de Page (Affiché dans le footer)', 'votre_theme'),
+    'topbar_menu' => __('Menu Principal (Affiché en haut)', 'Planty'),
+    'footer_menu' => __('Menu Pied de Page (Affiché dans le footer)', 'Planty'),
   ));
 }
 add_action('after_setup_theme', 'mon_theme_register_nav_menu');
