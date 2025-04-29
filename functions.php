@@ -1,5 +1,9 @@
 <?php
 
+
+// add_action() est une fonction WordPress qui permet d'attacher une fonction personnalisée à une action spécifique de WordPress.
+// 'wp_enqueue_scripts' est une action (un "hook") qui se déclenche au moment où WordPress charge les scripts et les styles pour l'affichage des pages.
+
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
 /**
@@ -30,6 +34,7 @@ add_action('after_setup_theme', 'mon_theme_support');
  */
 function mon_theme_register_nav_menu()
 {
+
   register_nav_menus(array(
     'topbar_menu' => __('Menu Principal (Affiché en haut)', 'Planty'),
     'footer_menu' => __('Menu Pied de Page (Affiché dans le footer)', 'Planty'),
@@ -49,7 +54,7 @@ function ajout_element_menu($items, $args)
   if ($args->theme_location == 'topbar_menu' && is_user_logged_in() && current_user_can('administrator')) {
 
     $admin_url = esc_url(admin_url()); // Sécuriser l'URL
-    $admin_item = "<li><a href='$admin_url'>Admin</a></li>";
+    $admin_item = "<li class='lien-admin'><a href='$admin_url'>Admin</a></li>";
     // Convertir les items du menu en tableau pour insérer l'élément à la deuxième place
     $items_array = explode('</li>', $items);
 
