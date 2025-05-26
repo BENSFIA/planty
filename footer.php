@@ -7,4 +7,6 @@
 
 </footer>
 
+<!-- le point d'accroche (hook) pour exécuter toutes les fonctions enregistrées à l'acction wp_footer -->
+
 <?php wp_footer(); ?>

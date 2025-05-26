@@ -7,7 +7,7 @@
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
 /**
- * Enqueue les styles CSS du thème parent et du thème enfant.
+ * Enqueue (mise en file d'attente) les styles CSS du thème parent et du thème enfant.
  */
 function theme_enqueue_styles()
 {

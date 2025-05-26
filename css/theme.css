@@ -137,6 +137,7 @@ body {
   background-color: #ece2da;
   border-radius: 0% 0% 30% 30% / 10% 10% 2% 2% !important;
 }
+
 .nous-contacter {
   background-color: #ece2da;
   margin: 0 auto;
@@ -215,18 +216,18 @@ footer {
   padding: 0 380px !important;
 }
 
-.fleure-nous-rencontrer,
+.fleur-nous-rencontrer,
 .message-nous-contacter {
   position: relative;
   z-index: 1;
 }
-.fleure-nous-rencontrer::after {
+.fleur-nous-rencontrer::after {
   content: " ";
   position: absolute;
   bottom: -28px;
-  left: -52px;
-  width: 120px;
-  height: 120px;
+  left: -100px;
+  width: 100px;
+  height: 100px;
   background-image: url("../images/Group 2.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -260,7 +261,9 @@ footer {
   /* background-color: #c02e44; */
   display: flex !important;
   width: 108% !important;
-  justify-content: space-around !important;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  justify-content: space-between !important;
   align-items: center !important;
 }
 .form-commander {
@@ -394,7 +397,8 @@ footer {
   .can {
     max-width: 100%;
   }
-  .fleure-nous-rencontrer::after {
+
+  .fleur-nous-rencontrer::after {
     bottom: 40px;
     left: -220px;
     width: 150px;
@@ -460,7 +464,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 781px) {
+@media screen and (min-width: 319px) and (max-width: 781px) {
   #logo {
     margin: 10px auto 10px auto;
     width: 120px;
@@ -510,6 +514,7 @@ footer {
     position: relative;
     z-index: 2;
   }
+
   .image-fruit {
     display: block;
 
@@ -521,12 +526,21 @@ footer {
     height: 40% !important;
     margin-left: 60px !important;
   }
+
+  .compteur-commander {
+    display: flex !important;
+    width: 90% !important;
+    padding-left: 12px !important;
+    padding-right: 24px !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
   .commander-fraise::after,
   .commander-citron::after,
   .commander-framboise::after,
   .commander-pamplemousse::after {
-    width: 82px; /* Réduire encore plus la largeur de l'image */
-    height: 80px; /* Réduire encore plus la hauteur de l'image */
+    width: 78px; /* Réduire encore plus la largeur de l'image */
+    height: 78px; /* Réduire encore plus la hauteur de l'image */
     bottom: -12px; /* Ajuster encore la position verticale */
     left: 2px; /* Ajuster encore la position horizontale */
   }
@@ -535,19 +549,31 @@ footer {
   .compteur-commande-p,
   .compteur-commande-pm,
   .compteur-commande-c {
-    width: 58px; /* Réduire encore la largeur du compteur */
-    margin-left: 20px; /* Réduire encore la marge à gauche */
-    padding-right: 0; /* Supprimer le padding à droite pour les écrans plus petits */
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 68px !important; /* Réduire encore la largeur du compteur */
+    margin-left: 12px !important; /* Réduire encore la marge à gauche */
+    padding-right: 12px !important; /* Supprimer le padding à droite pour les écrans plus petits */
+  }
+  .para-nous-rencontrer {
+    display: flex;
+    width: 60% !important;
+    padding: 0 24px !important;
+    margin: 0 24px !important;
+  }
+  .fleur-nous-rencontrer {
+    left: 60px;
+    width: 80% !important;
   }
 
-  .fleure-nous-rencontrer::after {
+  .fleur-nous-rencontrer::after {
     display: none;
   }
 
   .nous-rencontrer-h1,
   .form-nous-contacter {
     display: block;
-    max-width: 80%;
+    max-width: 75%;
 
     margin: auto !important;
   }
