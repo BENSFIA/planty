@@ -19,6 +19,7 @@ Version: 1.2.19
 
 body {
   margin: 0;
+
   width: 100%;
   font-family: var(--police);
   color: var(--color-white);
@@ -58,8 +59,8 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 100%;
-  height: 80px;
-  padding: 0 12px;
+  height: 78px;
+  padding: 0 0 0 12px;
 }
 
 #logo {
@@ -90,29 +91,35 @@ body {
 }
 
 #menu-item-271 {
-  background-color: #c02e449a;
+  background-color: var(--soft-coral);
 
   display: flex;
+
   align-items: center;
   justify-content: center;
-  min-width: 5em;
-
-  padding: 2px 8px;
+  width: 240px;
 }
+#menu-item-271:hover {
+  background-color: #c02e44;
+}
+
+#menu-item-271 a {
+  color: #ffffff !important;
+  padding: 32px !important;
+}
+#menu-item-271 a:hover {
+  background-color: #c02e44 !important;
+}
+
 .lien-admin {
-  padding: 32px;
+  padding: 30px;
 }
 #menu-item-273 {
-  padding: 32px;
+  padding: 30px;
 }
 #menu li a {
   text-decoration: none;
   color: var(--color-black);
-}
-#menu li a:hover {
-  color: var(--accent-color);
-  background-color: var(--secondry-color);
-  padding: 32px;
 }
 
 .h1-mobile {
@@ -276,20 +283,30 @@ footer {
 .commander-citron,
 .commander-framboise,
 .commander-pamplemousse {
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  align-items: center;
+  color: #ffffff;
   position: relative;
   z-index: 1;
+
+  min-height: 90px;
 }
 
 .commander-fraise::after {
   position: absolute;
   bottom: -20px;
   left: -2px;
+  color: #ffffff;
   width: 140px;
   height: 130px;
-  background-image: url("../images/fraise Moyenne.png");
+  background-image: url("../images/fraise.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: -10;
 }
 
 .commander-citron::after {
@@ -299,10 +316,11 @@ footer {
   left: -2px;
   width: 140px;
   height: 130px;
-  background-image: url("../images/citron Moyenne.png");
+  background-image: url("../images/citron.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: -10;
 }
 
 .commander-framboise::after {
@@ -312,10 +330,11 @@ footer {
   left: -2px;
   width: 140px;
   height: 130px;
-  background-image: url("../images/framboise Moyenne.png");
+  background-image: url("../images/framboise.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: -10;
 }
 
 .commander-pamplemousse::after {
@@ -325,10 +344,11 @@ footer {
   left: -2px;
   width: 140px;
   height: 130px;
-  background-image: url("../images/pamplemousse Moyenne.png");
+  background-image: url("../images/pamplemousse.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: -10;
 }
 
 .compteur-commande-f,
@@ -535,14 +555,14 @@ footer {
     justify-content: space-between !important;
     align-items: center !important;
   }
-  .commander-fraise::after,
-  .commander-citron::after,
-  .commander-framboise::after,
-  .commander-pamplemousse::after {
-    width: 78px; /* Réduire encore plus la largeur de l'image */
-    height: 78px; /* Réduire encore plus la hauteur de l'image */
-    bottom: -12px; /* Ajuster encore la position verticale */
-    left: 2px; /* Ajuster encore la position horizontale */
+
+  .fraise,
+  .pamplemousse,
+  .framboise,
+  .citron {
+    margin-left: 4px;
+    width: 80px;
+    height: 40px;
   }
 
   .compteur-commande-f,

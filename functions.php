@@ -1,9 +1,5 @@
 <?php
 
-
-// add_action() est une fonction WordPress qui permet d'attacher une fonction personnalisée à une action spécifique de WordPress.
-// 'wp_enqueue_scripts' est une action (un "hook") qui se déclenche au moment où WordPress charge les scripts et les styles pour l'affichage des pages.
-
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
 /**
@@ -69,6 +65,10 @@ function ajout_element_menu($items, $args)
   }
   return $items;
 }
+
+
+// le  filtre WordPress pour modifier la sortie HTML du menu de navigation avant qu'il ne soit affiché sur votre site web.
+
 add_filter('wp_nav_menu_items', 'ajout_element_menu', 10, 2);
 
 ?>
